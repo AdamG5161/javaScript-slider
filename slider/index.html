@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
         .kontener {
             margin: 0 auto;
             width: 50vw;
@@ -25,12 +25,12 @@
             image-rendering: auto;
             user-select: none
         }
-        
+
         img {
             width: 100%;
             height: 100%;
         }
-        
+
         .right {
             position: absolute;
             right: 0;
@@ -42,12 +42,12 @@
             color: white;
             padding: 10px;
         }
-        
+
         article {
             display: block;
             margin: 50px;
         }
-        
+
         .left {
             position: absolute;
             left: 0;
@@ -60,22 +60,22 @@
             font-size: x-large;
             color: white;
         }
-        
+
         .button {
             transition: 0.4s;
             cursor: pointer;
         }
-        
+
         .button:hover {
             background-color: #369b6d;
         }
-        
+
         .button.disable {
             opacity: 0.4;
             cursor: default;
             pointer-events: none;
         }
-        
+
         .number {
             position: absolute;
             color: white;
@@ -84,7 +84,7 @@
             left: 50%;
             transform: translate(-50%);
         }
-        
+
         .number>p {
             display: block;
             text-align: center;
@@ -97,58 +97,14 @@
 <body>
     <div class="kontener">
         <div class="left button disable">
-            <</div>
-                <div class="right button ">></div>
+        </div>
+        <div class="right button ">></div>
                 <div class="number ">
                     <p>/5</p>
                 </div>
         </div>
 
-        <article>
-            Sorce Code: <br><br> const leftButton = document.querySelector(".left");<br> const rightButton = document.querySelector('.right');<br></br>
-            const frameNumber = document.querySelector('.number p');<br></br>
-            let index = 0;<br></br>
-
-            const imagesArr = [<br></br>
-            './images/1.jpg',<br></br>
-            './images/2.jpg',<br></br>
-            './images/3.jpg',<br></br>
-            './images/4.jpg',<br></br>
-            './images/5.jpg'<br></br>
-            ] const img = document.createElement('img');<br></br>
-            const kontener = document.querySelector('.kontener');<br></br>
-            img.setAttribute('src', imagesArr[index])<br></br>
-            kontener.appendChild(img)<br></br>
-            leftButton.addEventListener("click", left);<br></br>
-            rightButton.addEventListener("click", right);<br></br>
-            frameNumber.textContent = index + 1 + '/5';<br></br>
-
-
-            function left() {<br></br>
-
-            if (index
-            <=i magesArr.length) {<br></br>
-                rightButton.classList.remove('disable')<br></br>
-                index--<br></br>
-                // let number = index; img.setAttribute('src', imagesArr[index])<br></br>
-
-                frameNumber.textContent = index + 1 + '/5';<br></br>
-                } if (index === 0) {<br></br>
-                leftButton.classList.add('disable')<br></br>
-                } } function right() {<br></br>
-                if (index >= 0) {<br></br>
-                leftButton.classList.remove('disable')<br></br>
-                index++<br></br>
-
-                img.setAttribute('src', imagesArr[index])<br></br>
-                frameNumber.textContent = index + 1 + '/5';<br></br>
-                if (index === imagesArr.length - 1) {<br></br>
-                rightButton.classList.add('disable')<br></br>
-                }<br></br>
-                }<br></br>
-
-                }<br></br>
-        </article>
+        
 
         <script src="script.js"></script>
 </body>
